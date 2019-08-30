@@ -17,7 +17,7 @@ CleanData <- function(x){
   x2 <- tolower(x2) # force lower case
   x2 <- tm::removeNumbers(x2)
   x2 <- tm::removePunctuation(x2)
-  x2 <- tm::removeWords(x2) # remove common stopwords
+  x2 <- tm::removeWords(x2, rem) # remove common stopwords
   x2 <- tm::stripWhitespace(x2)
   cleandata <- stringr::str_replace_all(x2, '[^a-zA-Z\\s]', ' ') # remove all non-characters
 
