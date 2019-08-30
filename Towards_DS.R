@@ -1,3 +1,7 @@
+# NLP tutorial from Towards Data Science
+# https://towardsdatascience.com/get-started-with-natural-language-processing-a-multi-label-text-classification-example-in-r-part-bb8f064be5e4
+
+
 library(lexicon)
 library(stringr)
 library(textclean)
